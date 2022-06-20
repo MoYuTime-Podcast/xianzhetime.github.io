@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+
+
+<title>03: 越长大越肤浅，可我只想躲回童年 | XianZheTime</title>
+
+
+
+    <link rel="icon" href="/./image/img.jpg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">XianZhe Time</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                    <a class="menu-item" href="/archives">Archives</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">XianZhe Time</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                    <a class="menu-item" href="/archives">Archives</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">03: 越长大越肤浅，可我只想躲回童年</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2020-04-30&nbsp;&nbsp;00:00:00</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            
+        <div id="aplayer-dkMQQlmQ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-dkMQQlmQ"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "03: 越长大越肤浅，可我只想躲回童年",
+              author: "moyu-time",
+              url: "https://jt.ximalaya.com//wKgPEl6qzZGSkfwQAbJ3aP7WIPA077.m4a?channel=rss&album_id=31879246&track_id=290587574&uid=5033679&jt=https://audio.xmcdn.com/group81/M06/01/0D/wKgPEl6qzZGSkfwQAbJ3aP7WIPA077.m4a",
+              pic: "https://bts-image.xyzcdn.net/aHR0cHM6Ly9mZGZzLnhtY2RuLmNvbS9ncm91cDg0L00wNy82Mi80Ni93S2c1SGw3LUJBQ1FCNHVrQUFPa1ppVXpjbUkxMDQucG5n.png",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<p><strong><a target="_blank" rel="noopener" href="https://www.xiaoyuzhoufm.com/episode/5eaacf68418a84a0468ffa12">Link</a></strong></p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;">这一期，小张和治治聊了聊从小到大的书影音观赏史：《简·爱》、步惊云、台湾偶像剧、粉红女郎、百年孤独……</p><span><br /></span><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;">我们发现，小时候看很多电视剧，长大了才熬得过去。那些陀思妥耶夫斯基没能做到的事，终于被皮皮鲁做到了。</p><span><br /></span><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;">*致歉声明：本期是我们在床上拿着话筒录的，有电流声，下次我们一定好好坐着录！鞠躬 × 2<br />&nbsp;<br />Highlights:<br />[00:50]&nbsp; 治治失恋了<br />[06:26]&nbsp; 第一次看黄书……<br />[14:36]&nbsp; 所有女权主义者第一本书都是《简·爱》吧！<br />[26:06]&nbsp; 我要戳穿蓝菲琳的真面目<br />[32:43]&nbsp; “单均昊不是神，他也是人！”<br />[37:11]&nbsp; 不敢说自己喜欢余秋雨<br />[39:14] 《百年孤独》哪里难读啦？<br /><br />Music credits:<br />Sugar Plum Jangle - Logan<br />Pipe Dream - Logan<br />Melody - Op 68 No1 - Robert Schumann<br />我只想要 - 七朵花<br />花香 - 许绍洋<br /><br />《贤者时间》是一档从女性视角观察人类并好奇为什么所有人类都这么奇怪的播客节目，由新媒体人小张和电视剧编剧治治主持。wb: @贤者时间KillTime / 本播客由 Marcast Media 制作出品，wx/wb:@Marcast，合作联系: hello@marcastmedia.com<br /></p>
+    
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://xianzhe-time.github.io/2020/04/30/vol3/">https://xianzhe-time.github.io/2020/04/30/vol3/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2022 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2020/05/15/vol4/">爱的软弱，从蝴蝶姐姐和罗志祥谈起｜深夜篇</a>
+            
+            
+            <a class="next" rel="next" href="/2020/03/26/vol2/">02: 青春爱憎史：不是说好只陪我上厕所吗？</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>©  | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

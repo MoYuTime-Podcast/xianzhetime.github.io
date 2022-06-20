@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+
+
+<title>就算是伤心小狗，这一拳下去也不开玩笑｜两周年特辑 | XianZheTime</title>
+
+
+
+    <link rel="icon" href="/./image/img.jpg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">XianZhe Time</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                    <a class="menu-item" href="/archives">Archives</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">XianZhe Time</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                    <a class="menu-item" href="/archives">Archives</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">就算是伤心小狗，这一拳下去也不开玩笑｜两周年特辑</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2022-01-23&nbsp;&nbsp;00:00:00</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            
+        <div id="aplayer-aOlOuikF" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-aOlOuikF"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "就算是伤心小狗，这一拳下去也不开玩笑｜两周年特辑",
+              author: "moyu-time",
+              url: "https://jt.ximalaya.com//GKwRIaIFwzh7Ar1SaQEQbtbM.m4a?channel=rss&album_id=31879246&track_id=495443390&uid=5033679&jt=https://audio.xmcdn.com/storages/d4f1-audiofreehighqps/E4/5B/GKwRIaIFwzh7Ar1SaQEQbtbM.m4a",
+              pic: "https://bts-image.xyzcdn.net/aHR0cHM6Ly9mZGZzLnhtY2RuLmNvbS9ncm91cDg0L00wNy82Mi80Ni93S2c1SGw3LUJBQ1FCNHVrQUFPa1ppVXpjbUkxMDQucG5n.png",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<p><strong><a target="_blank" rel="noopener" href="https://www.xiaoyuzhoufm.com/episode/61ed11d85f52a3cc8c218baf">Link</a></strong></p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><span>这期节目由两部分组成。前 27 分钟为「怪兽之旅」，32 分钟起，是两只旅行青蛙在呱呱呱。</span></p><span><br /></span><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><span>最近北京下雪了，蓬松松的棉花雪，不是坚硬的小冰碴。希望在下一次下雪和下下次下雪和下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下下次下雪时，我们仍保持联络。</span></p><span><br /></span><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><span>对了，感谢 138 位声音捕手的来信，感谢你们的生活热情、创作能量，以及对小张和治治的信赖。</span></p><span><br /></span><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><span>还有 31 位入选的声音捕手，是你们让 Little张 和 Double治 终于圆满交差，小怪兽也能过个好年！谢谢你们：珂仔和孙蕾、Collins、角角、小圆、叉尾、褪色老张、海盐、Bobby、Jen、姜涛jt、小铁匠、越越、赵小台、韵仔、迢迢、石桥、大壮、查理啊、河边雀、糖不苦、野生小王、小刘、图家家、陈女士、哈噜噜、加冰PRO、fonter、沙冰、卢某人、kk、阿月浑子果</span></p><span><br /></span><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><span>以上捕手，可以将你的地址直接回复给邮箱 hello@marcastmedia.com，或私信给微博 @Marcast ，查收你的礼物套装：贴纸和手写信。</span></p><span><br /></span><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><span>Music credits:</span></p><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><span>1. Sulle</span>y&nbsp;<span>A</span>n<span>d</span>&nbsp;<span>Mike – Randy Newman</span></p><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><span>2. Brambles – Jónsi</span></p><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><span>3. Sugar Plum Jangle – Logan</span></p><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><span>4. Melody – Op.68, No.1 – Robert Schumann</span></p><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><span>5. Pipe Dream – Logan</span></p><span><br /></span><p style="color: #333333; font-weight: normal; font-size: 16px; line-height: 30px; font-family: Helvetica,Arial,sans-serif; text-align: justify;"><span>《贤者时间》是一档从普通人视角观察其他普通人的播客节目，由小张和治治两个普通人主持。微博/公众号：@贤者时间播客&nbsp;</span><a href="https://www.xiaoyuzhoufm.com/episode/undefined" style="color: #4990E2; text-decoration: none;" target="_blank">https://weibo.com/u/7350110112 </a><span>| 出品方：Marcast Media 合作联系: hello@marcastmedia.com</span><a href="https://www.xiaoyuzhoufm.com/episode/undefined" style="color: #4990E2; text-decoration: none;" target="_blank">https://weibo.com/u/2743283854</a></p>
+    
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://xianzhe-time.github.io/2022/01/23/vol24/">https://xianzhe-time.github.io/2022/01/23/vol24/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2022 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2022/01/28/vol25/">关键你洗头的时候，也没法不洗到脸啊</a>
+            
+            
+            <a class="next" rel="next" href="/2021/12/31/vol23/">湿疹、野心、假装被男人逗笑，我们的 Not To Do List</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>©  | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
