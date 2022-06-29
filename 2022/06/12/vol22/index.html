@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+
+
+<title>加班狂敲 5 万字，3 万字都在群聊吹水 | 贤者时间</title>
+
+
+
+    <link rel="icon" href="/xianzhetime/./image/img.jpg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/xianzhetime/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/xianzhetime/js/script.js"></script>
+    
+    <script src="/xianzhetime/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/xianzhetime/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/xianzhetime/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/xianzhetime/">贤者时间</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/xianzhetime/archives">Posts</a>
+                
+                    <a class="menu-item" href="/xianzhetime/about">About</a>
+                
+                    <a class="menu-item" href="/xianzhetime/archives">Archives</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/xianzhetime/">贤者时间</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/xianzhetime/archives">Posts</a>
+                
+                    <a class="menu-item" href="/xianzhetime/about">About</a>
+                
+                    <a class="menu-item" href="/xianzhetime/archives">Archives</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">加班狂敲 5 万字，3 万字都在群聊吹水</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2022-06-12&nbsp;&nbsp;14:38:59</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            
+        <div id="aplayer-JxFGPYXh" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-JxFGPYXh"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "加班狂敲 5 万字，3 万字都在群聊吹水",
+              author: "KillTime",
+              url: "https://podcastsarchive.github.io/xianzhetime/audio/vol22.m4a",
+              pic: "https://podcastsarchive.github.io/xianzhetime/image/img.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<p><strong><a target="_blank" rel="noopener" href="https://www.xiaoyuzhoufm.com/episode/61c71527d0b9dedb116ca07b">Link</a></strong></p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p >治治回京了！当天深夜，我们散步去711买麻辣鸭肠，聊了聊人生中那些给过我们重要支撑的朋友们。</p><span><br /></span><p >我们发现，不管是「亲人式友谊」和「候鸟式友谊」，都同样可贵。</p><span><br /></span><p >Highlights：</p><p >[20:15] 所有人都觉得我郭敬明看多了，但你觉得我是个作家</p><p >[32:55] “你让宝贵的我生气了”</p><p >[48:45] 严正谴责！朋友才不是找不到男朋友时的备胎</p><p >[57:25] “越长大越孤单”，可能因为你没有长大</p><p >[01:18:40] 无所保留地敞开自己真的好难啊，但是</p><span><br /></span><p >*** 本集节目由「三得利和乐怡」和你一起收听 ***</p><span><br /></span><p >即日起，上天猫搜索「三得利酒类海外旗舰店」，向客服发送口令「贤者时间」，就可以领到贤者听友专属优惠券啦，6 罐和乐怡预调酒，原价 209 块，领券后，到手价只需要 90 块。</p><span><br /></span><p ><img alt="" src="http://imagev2.xmcdn.com/storages/acc6-audiofreehighqps/27/78/GMCoOScFnNHrAAaA7gEGvV3K.png!op_type=4&amp;device_type=ios&amp;upload_type=attachment&amp;name=mobile_large" /><br /></p><span><br /></span><p >Music credits:</p><p >1. Sugar Plum Jangle – Logan</p><p >2. Happy Song – TazLazuli</p><p >3. Melody – Op.68, No.1 – Robert Schumann</p><p >4. Pipe Dream – Logan</p><p >5. christmas in july – engelwood</p><span><br /></span><p >《贤者时间》是一档从普通人视角观察其他普通人的播客节目，由小张和治治两个普通人主持。微博：@贤者时间播客 https://weibo.com/u/7350110112 | 出品方：Marcast Media 合作联系: hello@marcastmedia.com https://weibo.com/u/2743283854</p><span><br /></span><br />
+    
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://podcastsarchive.github.io/xianzhetime/2022/06/12/vol22/">https://podcastsarchive.github.io/xianzhetime/2022/06/12/vol22/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2022 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/xianzhetime/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/xianzhetime/2022/06/12/vol23/">湿疹、野心、假装被男人逗笑，我们的 Not To Do List</a>
+            
+            
+            <a class="next" rel="next" href="/xianzhetime/2022/06/12/vol21/">你说得很好，可是我不想啊</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>©  | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+
+
+<title>冲突不断到来，你我置身事内 | 贤者时间</title>
+
+
+
+    <link rel="icon" href="/xianzhetime/./image/img.jpg">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/xianzhetime/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/xianzhetime/js/script.js"></script>
+    
+    <script src="/xianzhetime/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/xianzhetime/assets/css/APlayer.min.css" class="aplayer-style-marker">
+<script src="/xianzhetime/assets/js/APlayer.min.js" class="aplayer-script-marker"></script>
+</head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/xianzhetime/">贤者时间</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/xianzhetime/archives">Posts</a>
+                
+                    <a class="menu-item" href="/xianzhetime/about">About</a>
+                
+                    <a class="menu-item" href="/xianzhetime/archives">Archives</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/xianzhetime/">贤者时间</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/xianzhetime/archives">Posts</a>
+                
+                    <a class="menu-item" href="/xianzhetime/about">About</a>
+                
+                    <a class="menu-item" href="/xianzhetime/archives">Archives</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">冲突不断到来，你我置身事内</h1>
+            
+                <div class="post-meta">
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">2022-06-12&nbsp;&nbsp;14:45:31</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            
+        <div id="aplayer-OPtFgROm" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-OPtFgROm"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "冲突不断到来，你我置身事内",
+              author: "KillTime",
+              url: "https://podcastsarchive.github.io/xianzhetime/audio/vol26.m4a",
+              pic: "https://podcastsarchive.github.io/xianzhetime/image/img.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<p><strong><a target="_blank" rel="noopener" href="https://www.xiaoyuzhoufm.com/episode/6245969be90e615dbe1fd5c2">Link</a></strong></p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p >命途多舛的一期节目。我们被打断数次，数次面临重新开启话头的疲劳……但努力保持了镇定。</p><p >去习惯混乱吧，如果这是生活的要求。</p><p >Highlights:</p><p >[00:13:48]&nbsp; 人生中真正重要的问题无法靠赚钱解决</p><p >[00:17:55]&nbsp; 你的生活不能全部拿来对抗噪音</p><p >[00:26:12]&nbsp; 人怎么可以跳过情感，就只看立场呢</p><p >[00:39:12]&nbsp; 快递没被签收</p><p >[00:57:27]&nbsp; 停止向别人叙述你的玻璃罩子，或直接打破它</p><p >[01:06:01]&nbsp; 在泰坦尼克号上，是不必害怕对头等舱的人示爱的</p><p >*** 本集节目由「简单心理」和你一起收听 ***</p><p >简单心理《2021-2022大众心理健康洞察报告》点击查阅：https://www.jiandanxinli.com/daily/report_zhuanti_2021_2022/index.htm?utm_source=podcast&amp;utm_medium=kol&amp;utm_campaign=adv_2022xianzheshijian</p><p >即日起关注【简单心理】公众号，回复「贤者时间」，即可领取 350 元专属优惠券，用于「简单森林」心理评估服务。「简单森林」目前有 3 家，分别在北京朝阳区丽都、海淀区中关村和上海的永嘉庭。不在北京/上海的朋友，也可以领取到 100 元简单心理线上评估的专属优惠券。</p><p >此前小张治治体验「简单森林」心理评估服务的分享可回听这集节目：https://www.xiaoyuzhoufm.com/episode/61a4a7458ce87089b33d30c7?s=eyJ1IjoiNWU3ZDcyZGFhMmYyZTUwM2NlYzQ2YzZkIn0%3D</p><p >关于「简单心理」</p><p >成立于 2014 年，是国内领先的一站式心理健康服务平台，只提供高质量的心理健康服务。简单心理在全球 117 个城市拥有 1000+ 位心理咨询师和心理健康工作者，提供了超过 100 万人次的专业心理咨询服务。</p><p >更多心理健康服务：简单心理 APP</p><p >******</p><p >【关于节目】</p><p >《贤者时间》是一档从普通人视角观察其他普通人的播客节目，由小张和治治两个普通人主持。</p><p >微博：@贤者时间播客 https://weibo.com/u/7350110112</p><p >公众号：贤者时间播客</p><p >【后期制作】</p><p >Stella / 李马克</p><p >【本集音乐】</p><p >All music credits to:</p><p >1.Sugar Plum Jangle – Logan</p><p >2.Melody – Op.68, No.1 – Robert Schumann</p><p >3.Pipe Dream – Logan</p><p >4. while you were away – frad</p><p >节目出品：Marcast Media https://weibo.com/u/2743283854</p><p >合作联系：hello@marcastmedia.com</p><span><br /></span><br />
+    
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://podcastsarchive.github.io/xianzhetime/2022/06/12/vol26/">https://podcastsarchive.github.io/xianzhetime/2022/06/12/vol26/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2022 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/xianzhetime/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/xianzhetime/2022/06/12/vol27/">在不得不闭门独处的时间里</a>
+            
+            
+            <a class="next" rel="next" href="/xianzhetime/2022/06/12/vol25/">关键你洗头的时候，也没法不洗到脸啊</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>©  | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
